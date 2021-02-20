@@ -23,7 +23,7 @@
 #define AB_BUTTON_PIN 3				
 #endif
 // If you want debug print in serial, uncoment next line and fun serial monitor :)
-//#define DEBUG_PRINT
+#define DEBUG_PRINT
 // My sensor button connected to "+". If it connected to ground, then change to HIGHT_PULL
 GButton another_button(AB_BUTTON_PIN, LOW_PULL, NORM_OPEN); 
 // GButton another_button(AB_BUTTON_PIN, HIGHT_PULL, NORM_OPEN); 
@@ -57,7 +57,7 @@ void setup() {
   
 #ifdef DEBUG_PRINT
   Serial.begin(9600);
-  Serial.println("\nAhother Button test...");
+  Serial.println("\nAhother Button (GyverButton) test...");
   Serial.printf("Pin of button = %d, gradations for dimming = %d", AB_BUTTON_PIN, AB_STEPS);
   Serial.println("\nPress button: click, duble click, triple click, hold, click+hold...");
     print_state(" ");
