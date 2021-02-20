@@ -7,5 +7,4 @@ private:
     int pb = 2;
 public:
     mylib(int x, int y);
-    ~mylib();
 };
